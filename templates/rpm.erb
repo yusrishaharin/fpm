@@ -25,6 +25,7 @@
 %define _binary_filedigest_algorithm <%= digest_algorithm %>
 # This is the macro I find on OSX when Homebrew provides rpmbuild (rpm v5.4.14)
 %define _build_binary_file_digest_algo <%= digest_algorithm %>
+%define _build_id_links none
 
 # Use <%= attributes[:rpm_compression] %> payload compression
 %define _binary_payload <%= payload_compression %> 
